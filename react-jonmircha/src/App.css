@@ -1,0 +1,138 @@
+:root {
+  /* COLORS */
+  --colorHsl: 50;
+  --colorPrincipal: hsl(var(--colorHsl), 100%, 50%);
+  --colorOscuro: hsl(var(--colorHsl), 100%, 20%);
+  --colorClaro: hsl(var(--colorHsl), 100%, 90%);
+  --colorBrillante: hsl(var(--colorHsl), 50%, 50%);
+  --colorBlanco: hsl(var(--colorHsl), 100%, 100%);
+  --colorNegro: hsl(var(--colorHsl), 0%, 0%);
+  --colorGris: hsl(var(--colorHsl), 0%, 30%);
+  --colorGrisClaro: hsl(var(--colorHsl), 0%, 80%);
+  --colorBg: hsl(var(--colorHsl), 0%, 10%);
+
+  /* Size */
+  --h1: 32px;
+  --h2: 25px;
+  --h3: 20px;
+  --h4: 16px;
+
+  --pequeña: 10px;
+
+  /* FONT FAMILY */
+  --titulos: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  --textos: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  /* FONT WIGTH */
+  --grueso: "bold";
+  --fino: "300";
+}
+
+/* ******** GENERALES ******** */
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 0.2rem;
+}
+
+body {
+  margin: 0 auto;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed green;
+}
+img {
+  width: 100%;
+}
+p {
+  line-height: 22px;
+  color: var(--colorGris);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+  margin: 1rem auto;
+  font-family: var(--titulos);
+  color: var(--colorBrillante);
+  border-bottom: 2px dashed var(--colorOscuro);
+}
+.section__separador {
+  margin: 2rem auto;
+}
+
+/* ******** GENERALES ******** */
+
+.contenedor__colores {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+.colorPrincipal {
+  background-color: var(--colorPrincipal);
+  width: 30px;
+  height: 30px;
+}
+.colorOscuro {
+  background-color: var(--colorOscuro);
+  width: 30px;
+  height: 30px;
+}
+
+.colorClaro {
+  background-color: var(--colorClaro);
+  width: 30px;
+  height: 30px;
+}
+.colorBrillante {
+  background-color: var(--colorBrillante);
+  width: 30px;
+  height: 30px;
+}
+
+.colorBlanco {
+  background-color: var(--colorBlanco);
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+}
+
+.colorNegro {
+  background-color: var(--colorNegro);
+  width: 30px;
+  height: 30px;
+}
+
+.colorGris {
+  background-color: var(--colorGris);
+  width: 30px;
+  height: 30px;
+}
+
+.colorGrisClaro {
+  background-color: var(--colorGrisClaro);
+  width: 30px;
+  height: 30px;
+}
+
+.colorBg {
+  background-color: var(--colorBg);
+  width: 30px;
+  height: 30px;
+}
